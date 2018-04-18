@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="port-br">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <title>Eleições 2014: Google Charts</title>
+
+</head>
+<body>
+	<div id="my-chart"></div>
+	<div>
+		<label>Político:</label>
+		<input type="text" name="politico" id="politico"></input>
+		
+		<label>Valor:</label>
+		<input type="text" name="value" id="value"></input>
+		
+		<button type="button" id="btn-insert-table" disabled onclick="insertTable()"> Inserir </button>
+		<button type="button" id="btn-draw-chart" disabled onclick="drawChart()"> Gerar gráfico </button>
+		
+		<table id="my-table" border= "1">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Pontuação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row"> Nome do Político 1 </th>
+					<td> 10 </td>
+				</tr>
+				<tr>
+					<th scope="row"> Nome do Político 2 </th>
+					<td> 15 </td>
+				</tr>
+				<tr>
+					<th scope="row"> Nome do Político 3 </th>
+					<td> 25 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="gviz-api.js"></script>
+    <script type="text/javascript" src="http://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
